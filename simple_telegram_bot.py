@@ -5,7 +5,7 @@ from simple_telegram_bot.bot import Bot
 from simple_telegram_bot.db import DataBase
 from telegram.error import NetworkError, Unauthorized
 
-api_token = '' # ENTER YOUR API TOKEN
+api_token = os.environ.get("api_token")
 dir_db = os.path.join(os.getcwd(), 'data')
 
 # EDITABLE FUNCTION
